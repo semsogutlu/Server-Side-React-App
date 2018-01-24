@@ -68,7 +68,9 @@ module.exports = {
   plugins: [    
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
-      __CLIENT__: true
+      'global': {
+        __CLIENT__: true
+      }
     }),
   ]
 }
