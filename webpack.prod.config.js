@@ -56,9 +56,11 @@ module.exports = {
     new ExtractTextPlugin({filename: '[name]-[hash].css', allChunks: true}),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
+        NODE_ENV: '"production"',
       },
-      __CLIENT__: true
+      'global': {
+        __CLIENT__: true
+      }
     }),
     new StatsWriterPlugin({
       filename: "manifest.json"
