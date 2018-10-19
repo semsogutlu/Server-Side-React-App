@@ -23,7 +23,6 @@ if(process.env.NODE_ENV !== 'production'){
 app.use(Express.static(path.resolve(__dirname, '../../dist/'), {maxAge: "365d"}));
 app.get('/api/people/', function (req, res, next) {
   getPeople(apiResult => {
-    console.log(apiResult);
     res.send(apiResult)
     return;
   });

@@ -1,16 +1,12 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import * as Actions from '../actions'
 import { fetchPeople } from '../api/people';
 import logo from '../../client/static/logo.svg';
-import PropTypes from 'prop-types';
 import './People.scss';
 
 
 class People extends React.Component {
-  componentDidMount() {
-    this.props.fetchPeople();
-  }
+  
   
  
   render() {
@@ -18,10 +14,15 @@ class People extends React.Component {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-title">Welcome to React</h1>
+        <h1 className="App-title">Example Server Side Rendering</h1>
       </header>
       <div className="App-intro">
-        <div dangerouslySetInnerHTML={{__html: this.props.people ? this.props.people[0] : ""}} />
+      <p>Try disabling JS and reload the page!</p>
+        <ul>
+          {this.props.people.map(function(person){
+              return <li key={ person }>{person}</li>;
+            })}
+        </ul>
       </div>
     </div>  
     );

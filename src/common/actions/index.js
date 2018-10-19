@@ -5,8 +5,3 @@ export const peopleLoaded = (people) => ({
   type: PEOPLE_LOADED,
   people
 });
-
-export const peopleLoading = (isLoading) => ({
-  type: PEOPLE_LOADING,
-  isLoading,
-});
