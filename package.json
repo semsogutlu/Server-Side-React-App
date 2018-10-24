@@ -73,7 +73,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-react-hmre": "^1.1.1",
     "babel-runtime": "^6.3.13",
-    "webpack": "^4.21.0",
+    "webpack": "^3.0.0",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.9.1"
   }
