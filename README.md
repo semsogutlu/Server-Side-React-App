@@ -9,7 +9,7 @@ An example of React app w/ server side rendering.
 - Navigate to localhost:3000/people.
 - Disable JS and refresh the page to see how it gets rendered initially on the server side.
 - Enjoy!
-- Note to to build for prod run "yarn run build".
+- Note: to build for prod run "yarn run build".
 
 ## What The Hell Is SSR
 SSR is to handle the initial render when a user first requests our app. 
